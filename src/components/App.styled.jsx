@@ -11,13 +11,13 @@ export const Section = styled.section`
   }
 `;
 
-export const TitleH1 = styled.h1`
+export const TitlePhone = styled.h1`
   margin-bottom: 15px;
   font-size: 30px;
   font-weight: bold;
 `;
 
-export const TitleH2 = styled.h2`
+export const TitleContacts = styled.h2`
   margin-bottom: 15px;
   font-size: 30px;
   font-weight: bold;

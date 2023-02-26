@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
-import { Container, Section, TitleH1, TitleH2 } from './App.styled';
+import { Container, Section, TitlePhone, TitleContacts } from './App.styled';
 
 export class App extends React.Component {
   state = {
@@ -66,11 +66,11 @@ export class App extends React.Component {
     return (
       <Container>
         <Section title="Phonebook">
-          <TitleH1>Phonebook</TitleH1>
+          <TitlePhone>Phonebook</TitlePhone>
           <ContactForm onSubmit={this.addContact} />
         </Section>
         <Section title="Contacts">
-          <TitleH2>Contacts</TitleH2>
+          <TitleContacts>Contacts</TitleContacts>
           <Filter value={filter} onChange={this.handleFilter} />
           <ContactList
             contacts={visibleContacts}
